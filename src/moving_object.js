@@ -17,10 +17,10 @@ MovingObject.prototype.draw = function (ctx){
     const rad = this.radius;
     const col = this.color;
     // ctx.strokeStyle = `${col}`;
+    ctx.fill();
     ctx.beginPath();
     ctx.arc(circleX, circleY, rad, 0, 2 * Math.PI);
     ctx.fillStyle = this.color;
-    ctx.fill();
     // ctx.stroke();
     ctx.closePath();
 }
