@@ -1,0 +1,1 @@
+// const moving_object = require('./moving_object.js');
