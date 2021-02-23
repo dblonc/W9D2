@@ -33,6 +33,8 @@ Game.prototype.addAsteroids = function (){
 
 Game.prototype.draw = function(ctx){
     ctx.clearRect(0,0, this.DIM_X, this.DIM_Y);
+    ctx.fillStyle = "Blue";
+    ctx.fillRect(0, 0, 500, 500);
     this.asteroids.forEach(
         (asteroid) => {
             asteroid.draw(ctx);

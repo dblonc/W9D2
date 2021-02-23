@@ -7,8 +7,8 @@ function GameView (ctx, game){
 GameView.prototype.start = function(){
     let movedObjects = this.game.moveObjects.bind(this.game)
     let drawnObjects = this.game.draw.bind(this.game)
-    setInterval(movedObjects, 2000)
-    setInterval(()=>drawnObjects(this.ctx), 2000)
+    setInterval(movedObjects, 200)
+    setInterval(()=>drawnObjects(this.ctx), 200)
 }
 
 module.exports = GameView;
